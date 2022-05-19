@@ -18,9 +18,9 @@
 
 class homeconnect_capabilities {
 
-    public static $appliancesList;
-    public static $appliancesCapabilities;
-  
+    public $appliancesList;
+    public $appliancesCapabilities;
+
     public function __construct()
     {
         $this->appliancesList = [
@@ -1068,7 +1068,7 @@ class homeconnect_capabilities {
                 'action' => 'Program'
             ) ,
             'Cooking.Oven.Program.HeatingMode.FrozenHeatupSpecial' => array(
-                'name' => __("Réchauffage produit congelé", __FILE__) ,
+                'name' => __("Réchauffage produit surgelé", __FILE__) ,
                 'action' => 'Program'
             ) ,
             'Cooking.Oven.Program.HeatingMode.Desiccation' => array(
