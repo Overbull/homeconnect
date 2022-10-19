@@ -2287,6 +2287,24 @@ class homeconnect_capabilities {
                     'Refrigerator'
                 ) ,
             ) ,
+            'LaundryCare.Washer.Setting.IDos1BaseLevel' => array(
+                'name' => __("Volume de dosage i-Dos de détergent 1", __FILE__) ,
+                'action' => 'Setting',
+                'type' => 'Int',
+                'available' => array(
+                    'Washer',
+                    'WasherDryer'
+                ) ,
+            ) ,
+            'LaundryCare.Washer.Setting.IDos2BaseLevel' => array(
+                'name' => __("Volume de dosage i-Dos de détergent 2", __FILE__) ,
+                'action' => 'Setting',
+                'type' => 'Int',
+                'available' => array(
+                    'Washer',
+                    'WasherDryer'
+                ) ,
+            ) ,
             'BSH.Common.Root.SelectedProgram' => array(
                 'name' => __("Programme sélectionné", __FILE__) ,
                 'action' => 'Option',

@@ -76,6 +76,7 @@ class homeconnect extends eqLogic {
         if (isset($tableData[$_key])) {
 			return $tableData[$_key][$_detail];
 		} else {
+			return $_key;
 			log::add(__CLASS__,'debug',__FUNCTION__ . ' La clé ' . $_key . ' est introuvable');
 		}
 		return false;
