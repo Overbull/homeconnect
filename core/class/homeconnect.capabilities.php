@@ -18,9 +18,9 @@
 
 class homeconnect_capabilities {
 
-    public static $appliancesList;
-    public static $appliancesCapabilities;
-  
+    public $appliancesList;
+    public $appliancesCapabilities;
+
     public function __construct()
     {
         $this->appliancesList = [
@@ -1068,7 +1068,7 @@ class homeconnect_capabilities {
                 'action' => 'Program'
             ) ,
             'Cooking.Oven.Program.HeatingMode.FrozenHeatupSpecial' => array(
-                'name' => __("Réchauffage produit congelé", __FILE__) ,
+                'name' => __("Réchauffage produit surgelé", __FILE__) ,
                 'action' => 'Program'
             ) ,
             'Cooking.Oven.Program.HeatingMode.Desiccation' => array(
@@ -2285,6 +2285,24 @@ class homeconnect_capabilities {
                 'available' => array(
                     'FridgeFreezer',
                     'Refrigerator'
+                ) ,
+            ) ,
+            'LaundryCare.Washer.Setting.IDos1BaseLevel' => array(
+                'name' => __("Volume de dosage i-Dos de détergent 1", __FILE__) ,
+                'action' => 'Setting',
+                'type' => 'Int',
+                'available' => array(
+                    'Washer',
+                    'WasherDryer'
+                ) ,
+            ) ,
+            'LaundryCare.Washer.Setting.IDos2BaseLevel' => array(
+                'name' => __("Volume de dosage i-Dos de détergent 2", __FILE__) ,
+                'action' => 'Setting',
+                'type' => 'Int',
+                'available' => array(
+                    'Washer',
+                    'WasherDryer'
                 ) ,
             ) ,
             'BSH.Common.Root.SelectedProgram' => array(
